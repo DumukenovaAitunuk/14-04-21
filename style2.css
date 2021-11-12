@@ -75,8 +75,11 @@ div:nth-child(10) {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
-div:nth-child(11):hover {
-  transform: rotateZ(-30deg);
+div:nth-child(11) {
+    animation-name: rotateZ;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 div:nth-child(12):hover {
@@ -189,3 +192,14 @@ div:nth-child(15):hover {
                                     transform: rotate(0deg);
                                 }
                                 }
+                                @keyframes rotateZ{
+                                    0%{
+                                     transform:  rotateZ(0deg);
+                                    }
+                                    50%{
+                                        transform:  rotateZ(30deg);
+                                    }
+                                    100%{
+                                        transform: rotateZ(0deg);
+                                    }
+                                    }
