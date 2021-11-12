@@ -63,11 +63,17 @@ div:nth-child(8) {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
-div:nth-child(9):hover {
-  transform:  rotateY(-30deg);
+div:nth-child(9) {
+    animation-name: rotateY;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
-div:nth-child(10):hover {
-  transform:  rotate(-30deg);
+div:nth-child(10) {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 div:nth-child(11):hover {
   transform: rotateZ(-30deg);
@@ -161,3 +167,25 @@ div:nth-child(15):hover {
                             transform:  rotateX(0deg);
                         }
                         }
+                        @keyframes rotateY{
+                            0%{
+                             transform:  rotateY(0deg);
+                            }
+                            50%{
+                                transform:  rotateY(60deg);
+                            }
+                            100%{
+                                transform: rotateY(0deg);
+                            }
+                            }
+                            @keyframes rotate{
+                                0%{
+                                 transform:  rotate(0deg);
+                                }
+                                50%{
+                                    transform:  rotate(40deg);
+                                }
+                                100%{
+                                    transform: rotate(0deg);
+                                }
+                                }
