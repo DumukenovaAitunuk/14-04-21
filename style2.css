@@ -36,13 +36,23 @@ div:nth-child(3) {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
-
+div:nth-child(4) {
+    animation-name: translateX;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
-div:nth-child(5):hover {
-  transform: translateY(-10deg);
+div:nth-child(5) {
+    animation-name: translateY;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
-div:nth-child(6):hover {
-  transform: translate(-10deg);
+div:nth-child(6) {
+    animation-name: translate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 div:nth-child(7):hover {
     transform:  translateZ(-10deg);
@@ -115,3 +125,25 @@ div:nth-child(15):hover {
                 transform:  translateX(0deg);
             }
             }
+            @keyframes translateY{
+                0%{
+                 transform:  translateY(0deg);
+                }
+                50%{
+                    transform:  translateY(40deg);
+                }
+                100%{
+                    transform:  translateY(0deg);
+                }
+                }
+                @keyframes translate{
+                    0%{
+                     transform:  translate(0deg);
+                    }
+                    50%{
+                        transform:  translate(40deg);
+                    }
+                    100%{
+                        transform:  translate(0deg);
+                    }
+                    }
